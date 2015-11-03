@@ -1,0 +1,19 @@
+{
+  "name": "tcp_server",
+  "version": "0.1.0",
+  "description": "simple tcp server",
+  "main": "server.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test",
+    "start": "node server.js"
+  },
+  "author": "emily.landi@gmail.com",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.4.0",
+    "gulp": "^3.9.0",
+    "gulp-jshint": "^1.12.0",
+    "gulp-mocha": "^2.1.3",
+    "mocha": "^2.3.3"
+  }
+}

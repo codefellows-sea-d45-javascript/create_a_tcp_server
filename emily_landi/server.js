@@ -15,16 +15,21 @@ var server = net.createServer(function(socket) {
       }
       else {
         console.log('Request has been logged to new file: ' + time);
-        // socket.end();
+        //'socket hang up error' when socket.end() is run, but requests are still logged.
+        socket.end();
       }
     });
   });
 
-  socket.on('end', function() {
-    console.log('Connection is now closed.');
+  socket.on('end', function(err) {
+    if (err) {
+      throw err;
+    }
+    else {
+      console.log('Connection is now closed.');
+    }
   });
-});
 
-server.listen('3000', function(){
+}).listen('3000', function() {
   console.log('Server is running on port 3000.');
 });
