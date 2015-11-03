@@ -2,11 +2,11 @@
 
 var net = require('net');
 var fs = require('fs');
-var superagent = require('superagent-cli');
+// var superagent = require('superagent-cli');
 
 var server = net.createServer(function(socket) {
   socket.on('data', function(data) {
-    var str = new Data().toString();
+    var str = new Date().toString();
     var writeStream = fs.createWriteStream('.stream-log.log');
     writeStream.write(str);
     writeStream.end();
