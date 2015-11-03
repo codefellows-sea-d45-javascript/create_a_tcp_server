@@ -2,7 +2,7 @@ var net = require('net');
 var fs = require('fs');
 
 var server = net.createServer(function(socket) {
-  socket.pipe(process.stdout);
+  // socket.pipe(process.stdout);
   socket.on('data', function(req, res) {
     var filename = __dirname + "/tmp/" + Date.now() + ".txt";
     console.log("Writing to file at " + filename);
