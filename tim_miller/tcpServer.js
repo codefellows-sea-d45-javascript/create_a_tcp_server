@@ -5,14 +5,13 @@ var server = net.createServer(function(socket) {
   console.log('connection made');
 
   socket.on('data', function(data) {
-    var ws = fs.createWriteStream(new Date().toString());
+    var ws = fs.createWriteStream(__dirname + '/requests/' + Date.now() + '.txt');
     ws.write(data);
     ws.end();
     socket.emit('end');
   });
 
   socket.on('end', function() {
-    process.on('SIGTERM');
     console.log('socket closed');
   });
 
