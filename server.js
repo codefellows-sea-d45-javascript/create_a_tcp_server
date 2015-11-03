@@ -6,7 +6,7 @@ var fs = require('fs');
 var server = net.createServer(function(socket) {
   socket.on('data', function(data) {
     var str = new Date().toString() + '\n' + data.toString();
-    var writeStream = fs.createWriteStream('.stream-log.log');
+    var writeStream = fs.createWriteStream('./logs/' + new Date() + 'stream-log.log');
     writeStream.write(str);
     writeStream.end();
     socket.end();
