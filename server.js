@@ -2,7 +2,6 @@
 
 var net = require('net');
 var fs = require('fs');
-// var superagent = require('superagent-cli');
 
 var server = net.createServer(function(socket) {
   socket.on('data', function(data) {
