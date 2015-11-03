@@ -10,7 +10,6 @@ describe('the tcp server', function() {
   before(function(done){
     fs.readFile('datalog.log', function(err, data){
       logstringBefore = data.toString();
-      console.log(logstringBefore);
       done();
     });
   });

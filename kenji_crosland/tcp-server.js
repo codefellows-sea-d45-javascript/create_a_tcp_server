@@ -6,7 +6,6 @@ var request = require('superagent');
 
 var server = module.exports.server = net.createServer(function(socket){
   socket.on('data', function(data){
-    console.log(data.toString());
     var requestString = "Requested on: " + new Date().toString() + "\n" + data.toString();
     var writeStream = fs.createWriteStream("datalog.log", {'flags': 'a'});
     writeStream.write(requestString);
