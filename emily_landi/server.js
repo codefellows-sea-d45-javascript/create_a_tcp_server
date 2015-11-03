@@ -1,7 +1,7 @@
 var net = require('net');
 var fs = require('fs');
 
-var server = net.createServer(function(socket) {
+var server = net.createServer(function server(socket) {
 
   socket.on('data', function(data) {
     console.log('Request recieved.');
@@ -9,13 +9,12 @@ var server = net.createServer(function(socket) {
     var date = new Date();
     var time = date.getTime().toString();
 
-    fs.writeFile(time, data.toString(), function(err) {
+    fs.writeFile(__dirname + '/log/' + time, data.toString(), function(err) {
       if (err) {
         throw err;
       }
       else {
         console.log('Request has been logged to new file: ' + time);
-        //'socket hang up error' when socket.end() is run, but requests are still logged.
         socket.end();
       }
     });
@@ -30,6 +29,8 @@ var server = net.createServer(function(socket) {
     }
   });
 
-}).listen('3000', function() {
+});
+
+server.listen('3000', function() {
   console.log('Server is running on port 3000.');
 });
