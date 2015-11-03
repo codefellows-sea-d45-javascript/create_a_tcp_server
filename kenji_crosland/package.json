@@ -1,0 +1,19 @@
+{
+  "name": "kenji_crosland_tcp_server",
+  "version": "1.0.0",
+  "description": "A simple TCP file logger",
+  "main": "tcp-server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kenji Crosland",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.4.0",
+    "mocha": "^2.3.3",
+    "superagent": "^1.4.0"
+  }
+}
