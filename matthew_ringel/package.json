@@ -1,0 +1,26 @@
+{
+  "name": "simpletcp",
+  "version": "0.1.0",
+  "description": "simple tcp server that saves each REST request to a unique file",
+  "main": "tcp_server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mringel/create_a_tcp_server.git"
+  },
+  "keywords": [
+    "tcp",
+    "node"
+  ],
+  "author": "matthew ringel",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mringel/create_a_tcp_server/issues"
+  },
+  "homepage": "https://github.com/mringel/create_a_tcp_server#readme"
+}

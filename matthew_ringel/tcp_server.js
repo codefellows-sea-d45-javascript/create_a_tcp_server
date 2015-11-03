@@ -7,6 +7,7 @@ var server = net.createServer(function(socket) {
     var date = new Date();
     var filename = String(date.getTime());
     fs.writeFileSync(__dirname + "/log/" + filename,data.toString());
+    socket.end();
   });
 
   socket.on('end', function() {
