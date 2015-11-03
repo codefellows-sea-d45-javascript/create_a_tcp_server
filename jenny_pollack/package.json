@@ -1,0 +1,24 @@
+{
+  "name": "create_a_tcp_server",
+  "version": "0.1.0",
+  "description": "simple tcp server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jennypollack/create_a_tcp_server.git"
+  },
+  "author": "Jenny Pollack",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jennypollack/create_a_tcp_server/issues"
+  },
+  "homepage": "https://github.com/jennypollack/create_a_tcp_server#readme",
+  "devDependencies": {
+    "chai": "^3.4.0",
+    "jshint": "^2.8.0",
+    "mocha": "^2.3.3"
+  }
+}
