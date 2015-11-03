@@ -17,5 +17,4 @@ var server = net.createServer(function(socket) {
     console.log('socket closed');
   })
 
-
 }).listen(8888);
