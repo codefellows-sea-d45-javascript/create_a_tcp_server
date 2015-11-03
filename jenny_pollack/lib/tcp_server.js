@@ -9,6 +9,7 @@ var server = module.exports = net.createServer(function(socket){
 
 	socket.on('end', function(){
 		console.log('connection ending');
+		server.close(); 
 	});
 		
 });
