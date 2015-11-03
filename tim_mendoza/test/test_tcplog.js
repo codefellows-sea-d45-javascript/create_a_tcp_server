@@ -1,5 +1,5 @@
 var mocha = require('mocha');
-var expect = chai.expect;
+var expect = require('chai').expect;
 var net = require('net');
 var fs = require('fs');
 var tcpLog = require(__dirname + '/../lib/tcplog');
