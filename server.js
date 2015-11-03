@@ -1,11 +1,10 @@
 var net = require('net');
 var fs = require('fs');
+var time = require(__dirname + '/lib/name_gen.js');
 
 var server = net.createServer(function(socket) {
-
   socket.on('data', function(data) {
-    var timestamp = Date.now();
-    var logInput = fs.createWriteStream(__dirname + '/logs/log' + timestamp + '.txt');
+    var logInput = fs.createWriteStream(__dirname + '/logs/log' + time() + '.txt');
     logInput.write(data, function() {
       console.log('log entry written');
     });
