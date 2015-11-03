@@ -4,7 +4,9 @@ var os = require('os');
 
 var server = net.createServer(function(socket) {
   socket.on('data', function(data) {
-    console.log(data.toString());
+    var date = new Date();
+    var filename = String(date.getTime());
+    fs.writeFileSync(__dirname + "/log/" + filename,data.toString());
   });
 
   socket.on('end', function() {
