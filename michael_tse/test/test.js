@@ -1,19 +1,20 @@
+var net = require('net');
 var expect = require('chai').expect;
 var server = require(__dirname + '/../server.js');
+// var request = require('superagent');
 
-describe('looks into the server file', function() {
-  this.backup = process.argv;
-  process.argv = ['superagent', 'localhost', 'post', 'object'];
-  process.argv = {};
-  it('looks for file returned', function() {
-    expect(server(server).to.be.text);
+describe('the tcp server', function() {
+  beforeEach(function() {
+    server.listen('4000', function() {
+      console.log('server up-via mocha');
+    });
+  });
+
+  it('Should do something', function(done) {
+    request.get('http://localhost:4000').end(function(err, res){
+      expect(true).to.equal(false);
+    done();
+    });
   });
 });
-
-// describe('looks into the server file', function() {
-//   it('looks for file returned', function() {
-//     process.argv = ['superagent', 'localhost', 'post', 'object']
-//     expect(server(server).to.eql(''));
-//   });
-// });
 

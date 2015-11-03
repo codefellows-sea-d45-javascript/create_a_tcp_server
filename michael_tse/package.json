@@ -1,16 +1,12 @@
 {
-  "name": "michael_tse",
+  "name": "tcp-server",
   "version": "0.1.0",
-  "description": "",
-  "main": "server.js",
-  "directories": {
-    "test": "test"
-  },
+  "description": "runs a tcp server",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Michael Tse",
   "license": "MIT",
   "devDependencies": {
     "chai": "^3.4.0",

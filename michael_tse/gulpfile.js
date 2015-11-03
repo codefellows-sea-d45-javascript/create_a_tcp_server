@@ -1,10 +1,8 @@
-'use strict';
-
 var gulp = require('gulp');
 var jshint = require('gulp-jshint');
 var mocha = require('gulp-mocha');
 
-var appFiles = ['lib/*.js', 'index.js', 'server.js'];
+var appFiles = ['lib/*.js', 'index.js'];
 var testFiles = ['test/*.js',]
 
 gulp.task('jshint:test', function() {
