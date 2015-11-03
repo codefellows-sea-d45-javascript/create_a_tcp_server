@@ -6,7 +6,7 @@ var uuid = guid();
 
 var server = net.createServer(function(socket) {
 
-	var writeStream = fs.createWriteStream(uuid+'.txt');
+	var writeStream = fs.createWriteStream(uuid + '.txt');
 
 	socket.on('data', function (data) {
 		console.log(data.toString());
