@@ -1,4 +1,4 @@
-var server = require(__dirname + '/../rest.js');
+var server = require(__dirname + '/../tcpServer.js');
 var mocha = require('mocha');
 var expect = require('chai').expect;
 var fs = require('fs');
