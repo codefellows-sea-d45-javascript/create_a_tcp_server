@@ -2,9 +2,20 @@
 
 var net = require('net');
 var fs = require('fs');
+var superagent = require('superagent-cli');
 
 var server = net.createServer(function(socket) {
-  socket.pipe(process.stdout);
+  socket.on('data', function(data) {
+    var str = new Data().toString();
+    var writeStream = fs.createWriteStream('.stream-log.log');
+    writeStream.write(str);
+    writeStream.end();
+    socket.end();
+  });
 
-  // var writeStream = fs.createWriteStream('./output');
+  socket.on('end', function() {
+    console.log('socket closed');
+  })
+
+
 }).listen(8888);
