@@ -1,0 +1,31 @@
+{
+  "name": "create_a_tcp_server",
+  "version": "1.0.0",
+  "description": "tcp server",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/craigaaroncampbell/create_a_tcp_server.git"
+  },
+  "keywords": [
+    "tcp",
+    "server"
+  ],
+  "author": "craigaaroncampbell@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/craigaaroncampbell/create_a_tcp_server/issues"
+  },
+  "homepage": "https://github.com/craigaaroncampbell/create_a_tcp_server#readme",
+  "devDependencies": {
+    "chai": "^3.4.0",
+    "chai-http": "^1.0.0",
+    "gulp": "^3.9.0",
+    "gulp-jshint": "^1.12.0",
+    "gulp-mocha": "^2.1.3",
+    "mocha": "^2.3.3"
+  }
+}
