@@ -10,8 +10,6 @@ var server = net.createServer(function(socket) {
 
   socket.on('end', function(data) {
     console.log('socket closed');
-    // server.end();
-
   });
 });
 
