@@ -1,0 +1,34 @@
+{
+  "name": "isabella_organ",
+  "version": "1.0.0",
+  "description": "TCP Server",
+  "main": "tcp_server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isabellaorgan/create_a_tcp_server.git"
+  },
+  "keywords": [
+    "tcp",
+    "server",
+    "node",
+    "superagent"
+  ],
+  "author": "isabellaorgan@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isabellaorgan/create_a_tcp_server/issues"
+  },
+  "homepage": "https://github.com/isabellaorgan/create_a_tcp_server#readme",
+  "devDependencies": {
+    "chai": "^3.4.0",
+    "mocha": "^2.3.3",
+    "superagent": "^1.4.0",
+    "superagent-cli": "^2.0.0"
+  }
+}
