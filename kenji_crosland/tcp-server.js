@@ -20,12 +20,10 @@ var server = module.exports.server = net.createServer(function(socket){
 
 server.listen('3000', function(){
   console.log('server up');
-  //var client = net.connect({port:3000});
-  //request.get('http://localhost:3000').end(function(err, res){});
 });
 
 var client = net.connect({port: 3000},
     function() { //'connect' listener
   console.log('connected to server!');
-  client.write("Requested on: " + new Date().toString());
+  client.write("Requested on: " + new Date().toString() + "\n");
 });
