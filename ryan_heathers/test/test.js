@@ -1,19 +1,12 @@
-var chai = require('chai');
-var chaiHttp = require('chai-http');
+var expect = require('chai').expect;
+var server = require('../server');
+var request = require('superagent');
 
-chai.use(chaiHttp);
-
-describe('send a valid GET request', function() {
-  it('should respond with status 200', function(done) {
-    chai.request('http://localhost:3000')
-      .get('/')
-      .then(function(res) {
-        expect(res).to.have.status(200);
-      })
-      .catch(function(err) {
-        throw err;
-      });
-      done();
+describe('use GET request to write log file', function() {
+  it('should write a file to the output dir', function(done) {
+    request.get('http://localhost:3000/');
+    expect(server.bytesWrittenToDisk).to.not.equal(0);
+    done();
   });
 });
 
