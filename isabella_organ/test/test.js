@@ -2,10 +2,10 @@ var fs = require('fs');
 var net = require('net');
 var request = require('superagent');
 var chai = require('chai');
-var chaiHttp: = require('chai-http');
+var chaiHttp = require('chai-http');
 chai.use(chaiHttp);
 var expect = chai.expect;
-var server = require(__dirname + "/../tcp_server.js")
+var server = require(__dirname + "/../tcp_server.js");
 
 
 describe('tcp server', function() {
@@ -14,7 +14,8 @@ describe('tcp server', function() {
 		.get('/something')
 		.end(function(err, socket) {
 			expect(err).to.eql(null);
-			expect(socet.text).to.eql('some unique thing');
+			expect(socket.text).to.eql('some unique thing');
+		});
 			done();
 	});
 });
