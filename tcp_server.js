@@ -14,9 +14,10 @@ var server = net.createServer(function(socket) {
 
   socket.on('end', function() {
     fs.writeFile(__dirname + '/log/' + logTime, reqData);
-    console.log('Request logged in: ' + logTime);
+    console.log('Request logged at: ' + logTime);
   });
 });
 
-server.listen(3000);
-
+server.listen('3000', function() {
+  console.log('server up');
+});
