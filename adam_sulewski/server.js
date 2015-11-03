@@ -8,7 +8,6 @@ var server = net.createServer(function(socket) {
   var destFile = fs.createWriteStream(__dirname + dest());
   socket.pipe(destFile);
   socket.end();
-
 });
 
 server.listen('3000', function() {
