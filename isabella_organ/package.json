@@ -27,6 +27,9 @@
   "homepage": "https://github.com/isabellaorgan/create_a_tcp_server#readme",
   "devDependencies": {
     "chai": "^3.4.0",
+    "gulp": "^3.9.0",
+    "gulp-jshint": "^1.12.0",
+    "gulp-mocha": "^2.1.3",
     "mocha": "^2.3.3",
     "superagent": "^1.4.0",
     "superagent-cli": "^2.0.0"
