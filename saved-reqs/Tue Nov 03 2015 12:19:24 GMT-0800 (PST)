@@ -1,7 +1,6 @@
 GET / HTTP/1.1
 Host: localhost:3000
 Accept-Encoding: gzip, deflate
-Cookie: 
-User-Agent: node-superagent/0.18.2
+User-Agent: node-superagent/1.4.0
 Connection: close
 
