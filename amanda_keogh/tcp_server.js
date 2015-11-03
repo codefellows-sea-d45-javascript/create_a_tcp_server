@@ -1,9 +1,11 @@
+'use strict'
+
 var net = require('net');
 var fs = require('fs');
 
 var server = net.createServer(function(socket) {
   socket.on('data', function(data) {
-    fs.writeFile(Date.now() +'.txt', data.toString());
+    fs.writeFile(__dirname + '/requests/' + Date.now() +'.txt', data.toString());
   });
 
   socket.on('end', function() {

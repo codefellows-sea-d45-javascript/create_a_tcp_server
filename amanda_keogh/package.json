@@ -1,0 +1,28 @@
+{
+  "name": "keogh-tcp-server",
+  "version": "1.0.0",
+  "description": "a simple tcp logging server",
+  "main": "tcp_server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akeogh/create_a_tcp_server.git"
+  },
+  "author": "Amanda Keogh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/akeogh/create_a_tcp_server/issues"
+  },
+  "homepage": "https://github.com/akeogh/create_a_tcp_server#readme",
+  "devDependencies": {
+    "chai": "^3.4.0",
+    "chai-http": "^1.0.0",
+    "gulp": "^3.9.0",
+    "mocha": "^2.3.3"
+  }
+}
