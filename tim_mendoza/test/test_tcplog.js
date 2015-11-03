@@ -1,5 +1,4 @@
 var mocha = require('mocha');
-var chai = require('chai');
 var expect = chai.expect;
 var net = require('net');
 var fs = require('fs');
