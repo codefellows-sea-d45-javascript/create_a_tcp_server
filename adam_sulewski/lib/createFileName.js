@@ -6,6 +6,6 @@ exports = module.exports = function() {
                           .toLowerCase()
                           .split(' ')
                           .join('_');
-  return filename;
+  return '/log/' + filename + '.json';
 };
 
