@@ -23,6 +23,5 @@ server.listen('3000', function() {
 	console.log('server up');
 });
 
-server.listen(3000);
 
 
