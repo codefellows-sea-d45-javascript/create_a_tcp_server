@@ -1,0 +1,6 @@
+GET /something HTTP/1.1
+Host: localhost:3000
+Accept-Encoding: gzip, deflate
+User-Agent: node-superagent/0.19.1
+Connection: close
+
