@@ -1,9 +1,9 @@
 var net = require('net');
 var fs = require('fs');
 
-exports.newServer = function(port, fileName) {
+exports.newServer = function(port) {
   var server = net.createServer(function(socket) {
-    var file = fileName || Date.now().toString() + '.log';     
+    var file = Date.now().toString() + '.log';     
     socket.pipe(fs.createWriteStream(file));
     socket.end();
     console.log(file + ' written.');
