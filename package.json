@@ -1,0 +1,19 @@
+{
+  "name": "create_a_tcp_server",
+  "version": "0.1.0",
+  "description": "A simple node server and a test which logs TCP requests.",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/walterdn/create_a_tcp_server.git"
+  },
+  "author": "Walter Nicholas",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.4.0",
+    "chai-http": "^1.0.0",
+    "mocha": "^2.3.3",
+    "superagent": "^1.4.0",
+    "superagent-cli": "^2.0.0"
+  }
+}
