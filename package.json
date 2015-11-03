@@ -1,0 +1,25 @@
+{
+  "name": "rick_patci_tcp",
+  "version": "0.1.0",
+  "description": "TCP server writeable stream",
+  "main": "patci_tcp_server.js",
+  "dependencies": {
+    "node-uuid": "^1.4.3",
+    "superagent": "^1.4.0"
+  },
+  "devDependencies": {
+    "chai": "^3.4.0",
+    "chai-http": "^1.0.0",
+    "gulp": "^3.9.0",
+    "gulp-jshint": "^1.12.0",
+    "mocha": "^2.3.3"
+  },
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha test"
+  },
+  "keywords": [
+    "tcp"
+  ],
+  "author": "Rick Patci",
+  "license": "MIT"
+}
