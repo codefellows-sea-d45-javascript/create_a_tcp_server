@@ -4,7 +4,9 @@
   "description": "tcp server",
   "main": "index.js",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha test"
+    "test": "./node_modules/mocha/bin/mocha test",
+    "start": "./index.js",
+    "jibbity-flibbity": "echo 'sup, dogg?' "
   },
   "repository": {
     "type": "git",
@@ -26,6 +28,8 @@
     "gulp": "^3.9.0",
     "gulp-jshint": "^1.12.0",
     "gulp-mocha": "^2.1.3",
-    "mocha": "^2.3.3"
+    "jshint-stylish": "^2.0.1",
+    "mocha": "^2.3.3",
+    "superagent": "^1.4.0"
   }
 }
