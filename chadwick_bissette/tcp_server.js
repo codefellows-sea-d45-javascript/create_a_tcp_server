@@ -5,15 +5,13 @@ var fs = require('fs');
 var date = new Date();
 
 var server = net.createServer(function(socket) {
-  socket.on('data', function(data) {
     var fileName = date.getTime().toString();
     var requestStream = fs.createWriteStream('./logs/' + fileName + '.txt');
     socket.pipe(requestStream);
 
-    requestStream.on('finish', function() { //might be on 'close' or 'end'
-      console.log('close event emitted');
+    requestStream.on('finish', function() { //why is thi not working?? event is not 'close' or 'end' either-- I want event that fires when file is written
+      console.log('finish/close event emitted');
       socket.destroy();
-    });
   });
 });
 
