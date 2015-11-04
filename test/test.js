@@ -4,7 +4,7 @@ var chai = require('chai');
 var fs = require('fs');
 var expect = chai.expect;
 var chaiHttp = require('chai-http');
-var server = require('./tcp_server');
+var server = require(__dirname + '/../tcp_server');
 
 chai.use(chaiHttp);
 
