@@ -1,0 +1,36 @@
+{
+  "name": "tcp_logger",
+  "version": "0.1.0",
+  "description": "TCP server that logs each request into a new file",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanLombardy/create_a_tcp_server.git"
+  },
+  "author": "Dan Lombardy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DanLombardy/create_a_tcp_server/issues"
+  },
+  "homepage": "https://github.com/DanLombardy/create_a_tcp_server#readme",
+  "devDependencies": {
+    "chai": "^3.4.0",
+    "chai-http": "^1.0.0",
+    "gulp-jshint": "^1.12.0",
+    "gulp-mocha": "^2.1.3",
+    "jshint": "^2.8.0",
+    "mocha": "^2.3.3",
+    "superagent": "^1.4.0"
+  },
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "superagent": "^1.4.0",
+    "superagent-cli": "^2.0.0"
+  }
+}
