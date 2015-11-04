@@ -1,0 +1,29 @@
+{
+  "name": "spencer_caldwell",
+  "version": "1.0.0",
+  "description": "Create a TCP Server ======================== To complete this assignment:   * fork this repository (the sub module for this specific assignment)   * clone down your fork   * place all of your work in a folder that is your full name, use `_`s instead of spaces   * push back up to your fork   * create a pull request back to the original repo   * submit a link to the PR in canvas",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CardinalWolsey/create_a_tcp_server.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CardinalWolsey/create_a_tcp_server/issues"
+  },
+  "homepage": "https://github.com/CardinalWolsey/create_a_tcp_server#readme",
+  "devDependencies": {
+    "chai": "^3.4.0",
+    "gulp": "^3.9.0",
+    "gulp-jshint": "^1.12.0",
+    "gulp-mocha": "^2.1.3",
+    "mocha": "^2.3.3",
+    "superagent": "^1.4.0",
+    "superagent-cli": "^2.0.0"
+  }
+}
