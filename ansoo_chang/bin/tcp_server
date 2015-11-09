@@ -1,0 +1,8 @@
+#!/usr/bin/env node
+
+var tcpServer = require(__dirname + '/../lib/tcp_server');
+var bin = exports = module.exports = function() {
+
+}
+
+bin();
