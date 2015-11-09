@@ -1,0 +1,24 @@
+{
+  "name": "tcpServer",
+  "version": "0.0.0",
+  "description": "",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+    "chai": "~3.4.0",
+    "mocha": "~2.3.3",
+    "chai-http": "~1.0.0",
+    "gulp": "~3.9.0",
+    "q": "~1.4.1",
+    "gulp-jshint": "~1.12.0",
+    "gulp-mocha": "~2.1.3"
+  }
+}
