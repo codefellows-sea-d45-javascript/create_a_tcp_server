@@ -1,0 +1,27 @@
+{
+  "name": "robin_stringer",
+  "version": "1.0.0",
+  "description": "Create a TCP Server ======================== To complete this assignment:   * fork this repository (the sub module for this specific assignment)   * clone down your fork   * place all of your work in a folder that is your full name, use `_`s instead of spaces   * push back up to your fork   * create a pull request back to the original repo   * submit a link to the PR in canvas",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rastringer/create_a_tcp_server.git"
+  },
+  "author": "ra1stringer@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rastringer/create_a_tcp_server/issues"
+  },
+  "homepage": "https://github.com/rastringer/create_a_tcp_server#readme",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "mocha": "^2.3.3"
+  }
+}
