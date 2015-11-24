@@ -4,7 +4,7 @@ var fs = require('fs');
 var server = module.exports = net.createServer(function(socket){
 	
 	var unixTimestamp = Date.now(); 
-	var file = fs.createWriteStream(unixTimestamp + '.txt');
+	var file = fs.createWriteStream(__dirname + '/../logs/' +  unixTimestamp + '.txt');
 	socket.pipe(file);
 
 	socket.on('end', function(){
