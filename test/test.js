@@ -1,14 +1,22 @@
 var expect = require('chai').expect;
-var fs = require('fs');
-var assert = require('chai').assert;
+var chai = require('chai');
+var chaiHttp = require('chai-http');
 
-describe('A wild test appears...', function(){
-  it('it should run a test that tests nothing', function(done){
-    expect('nothing').to.eql('nothing');
-    done();
-  });
-  it('it should pretend like it is running another test', function(done){
-    expect('pretend').to.eql('pretend');
+chai.use(chaiHttp);
+
+var createServer = require(__dirname + '/../createserver');
+
+describe('an http request', function() {
+  it('should have status 200', function(done) {
+    var server = createServer.newServer();
+//  var socket = net.connect('3000');
+
+    chai.request('http://localhost:3000')
+      .get('/')
+      .then(function (res) {
+        console.log(res);
+        expect(res).to.have.status(200);
+      });
     done();
   });
 });
