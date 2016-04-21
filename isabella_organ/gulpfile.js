@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 var gulp = require('gulp');
 var mocha = require('gulp-mocha');
@@ -9,7 +9,7 @@ var chaiHttp = require('chai-http');
 var appFiles = ['tcp_server.js'];
 var testFiles = ['./test/**/*.js'];
 
-gulp.task('jshint:test', function() {
+gulp.task('jshint:test', () => {
 	return gulp.src(testFiles)
 		.pipe(jshint({
 				node: true,
@@ -23,7 +23,7 @@ gulp.task('jshint:test', function() {
 		.pipe(jshint.reporter('default'));
 });
 
-gulp.task('jshint:app', function() {
+gulp.task('jshint:app', () => {
 	return gulp.src(appFiles)
 	.pipe(jshint({
 		node: true
@@ -31,13 +31,10 @@ gulp.task('jshint:app', function() {
 	.pipe(jshint.reporter('default'));
 });
 
-gulp.task('mochatest', function () {
+gulp.task('mochatest', () => {
 	return gulp.src('test/*.js')
-	.pipe(mocha({reporter: 'nyan'}));
+	.pipe(mocha({ reporter: 'nyan' }));
 });
 
 gulp.task('jshint', ['jshint:test', 'jshint:app']);
 gulp.task('default', ['jshint', 'mochatest']);
-
-
-
