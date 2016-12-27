@@ -1,0 +1,26 @@
+{
+  "name": "create_a_tcp_server",
+  "version": "0.1.0",
+  "description": "a simple tcp server",
+  "main": "tcp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tinasharma/create_a_tcp_server.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tinasharma/create_a_tcp_server/issues"
+  },
+  "homepage": "https://github.com/tinasharma/create_a_tcp_server#readme",
+  "devDependencies": {
+    "chai": "^3.4.0",
+    "gulp": "^3.9.0",
+    "gulp-jshint": "^1.12.0",
+    "gulp-mocha": "^2.1.3",
+    "mocha": "^2.3.3"
+  }
+}
